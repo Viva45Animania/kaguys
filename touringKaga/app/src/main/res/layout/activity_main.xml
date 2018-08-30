@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="384dp"
+        android:layout_height="114dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="cursive"
+        android:text="Touring Kaga"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCamera"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="255dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Camera"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonMap"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="255dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:text="Map"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonForum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCamera"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonForum"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="255dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:text="Forum"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStamp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonMap" />
+
+    <Button
+        android:id="@+id/buttonStamp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="255dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:text="Stamp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRecommendation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonForum" />
+
+    <Button
+        android:id="@+id/buttonRecommendation"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="255dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:text="Recommendation"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStamp" />
+
+    <!--<android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_items"
+        tools:ignore="MissingConstraints" />-->
+
+
+</android.support.constraint.ConstraintLayout>
